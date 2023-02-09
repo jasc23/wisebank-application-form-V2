@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Application Form</title>
+</head>
+
+<header>
+ <h2> We love to know you!</h2>
+</header>
+
+<body>
+ Please fill out the required personal information.
+</body>
+
+<form action="submit-form.php" method="post">
+ <label for="first-name">First Name:</label><br>
+ <input type="text" id="first-name" name="first-name"><br><br>
+
+ <label for="last-name">Last Name:</label><br>
+ <input type="text" id="last-name" name="last-name"><br><br>
+
+ <label for="middle-name">Middle Name:</label><br>
+ <input type="text" id="middle-name" name="middle-name"><br><br>
+
+ <label for="suffix">Suffix:</label><br>
+ <input type="text" id="suffix" name="suffix"><br><br>
+
+ <label for="date-of-birth">Date of Birth:</label><br>
+ <input type="text" start value="MM/DD/YYYY"><br><br>
+
+ <label for="gender">Gender:</label>
+ <input type="radio" id="male" name="gender" value="male">
+ <label for="male">Male</label>
+ <input type="radio" id="female" name="gender" value="female">
+ <label for="female">Female</label><br><br>
+
+ <label for="citizenship">Citizenship:</label><br>
+ <input type="citizenship" id="citizenship" name="citizenship"><br><br>
+
+ <label for="province">Province:</label><br>
+ <!-- Option List-->
+ <select name=slist>
+  <option value="Abra">Abra</option>
+  <option value="Agusan del Norte">Agusan del Norte</option>
+  <option value="Agusan del Sur">Agusan del Sur</option>
+  <option value="Aklan">Aklan</option>
+  <option value="Albay">Albay</option>
+  <option value="Antique">Antique</option>
+  <option value="Apayao">Apayao</option>
+  <option value="Aurora">Aurora</option>
+  <option value="Basilan">Basilan</option>
+  <option value="Bataan">Bataan</option>
+  <option value="Batanes">Batanes</option>
+  <option value="Batangas">Batangas</option>
+  <option value="Biliran">Biliran</option>
+  <option value="Benguet">Benguet</option>
+  <option value="Bohol">Bohol</option>
+  <option value="Bukidnon">Bukidnon</option>
+  <option value="Bulacan">Bulacan</option>
+  <option value="Cagayan">Cagayan</option>
+  <option value="Camarines Norte">Camarines Norte</option>
+  <option value="Camarines Sur">Camarines Sur</option>
+  <option value="Camiguin">Camiguin</option>
+  <option value="Capiz">Capiz</option>
+  <option value="Catanduanes">Catanduanes</option>
+  <option value="Cavite">Cavite</option>
+  <option value="Cebu">Cebu</option>
+  <option value="Compostela">Compostela</option>
+  <option value="Davao del Norte">Davao del Norte</option>
+  <option value="Davao del Sur">Davao del Sur</option>
+  <option value="Davao Oriental">Davao Oriental</option>
+  <option value="Eastern Samar">Eastern Samar</option>
+  <option value="Guimaras">Guimaras</option>
+  <option value="Ifugao">Ifugao</option>
+  <option value="Ilocos Norte">Ilocos Norte</option>
+  <option value="Ilocos Sur">Ilocos Sur</option>
+  <option value="Iloilo">Iloilo</option>
+  <option value="Isabela">Isabela</option>
+  <option value="Kalinga">Kalinga</option>
+  <option value="Laguna">Laguna</option>
+  <option value="Lanao del Norte">Lanao del Norte</option>
+  <option value="Lanao del Sur">Lanao del Sur</option>
+  <option value="La Union">La Union</option>
+  <option value="Leyte">Leyte</option>
+  <option value="Maguindanao">Maguindanao</option>
+  <option value="Marinduque">Marinduque</option>
+  <option value="Masbate">Masbate</option>
+  <option value="Mindoro Occidental">Mindoro Occidental</option>
+  <option value="Mindoro Oriental">Mindoro Oriental</option>
+  <option value="Misamis Occidental">Misamis Occidental</option>
+  <option value="Misamis Oriental">Misamis Oriental</option>
+  <option value="Mountain Province">Mountain Province</option>
+  <option value="Negros Occidental">Negros Occidental</option>
+  <option value="Negros Oriental">Negros Oriental</option>
+  <option value="North Cotabato">North Cotabato</option>
+  <option value="Northern Samar">Northern Samar</option>
+  <option value="Nueva Ecija">Nueva Ecija</option>
+  <option value="Nueva Vizcaya">Nueva Vizcaya</option>
+  <option value="Palawan">Palawan</option>
+  <option value="Pampanga">Pampanga</option>
+  <option value="Pangasinan">Pangasinan</option>
+  <option value="Quezon">Quezon</option>
+  <option value="Quirino">Quirino</option>
+  <option value="Rizal">Rizal</option>
+  <option value="Romblon">Romblon</option>
+  <option value="Samar">Samar</option>
+  <option value="Sarangani">Sarangani</option>
+  <option value="Siquijor">Siquijor</option>
+  <option value="Sorsogon">Sorsogon</option>
+  <option value="South Cotabato">South Cotabato</option>
+  <option value="Southern Leyte">Southern Leyte</option>
+  <option value="Sultan Kudarat">Sultan Kudarat</option>
+  <option value="Sulu">Sulu</option>
+  <option value="Surigao del Norte">Surigao del Norte</option>
+  <option value="Surigao del Sur">Surigao del Sur</option>
+  <option value="Tarlac">Tarlac</option>
+  <option value="Tawi-Tawi">Tawi-Tawi</option>
+  <option value="Zambales">Zambales</option>
+  <option value="Zamboanga del Norte">Zamboanga del Norte</option>
+  <option value="Zamboanga del Sur">Zamboanga del Sur</option>
+  <option value="Zamboanga Sibugay">Zamboanga Sibugay</option>
+ </select><br><br>
+
+ <label for="city">City:</label><br>
+ <select name=slist>
+  <option value="Amadeo">Amadeo</option>
+  <option value="Bacoor">Bacoor</option>
+  <option value="Cavite City">Cavite City</option>
+  <option value="City of Dasmarinas">City of Dasmarinas</option>
+  <option value="Silang">Silang</option>
+  <option value="Imus">Imus</option>
+  <option value="Trece Martires">Trece Martires</option>
+  <option value="Tagaytay">Tagaytay City</option>
+ </select><br><br>
+
+ <label for="barangay">Barangay:</label><br>
+ <select name=slist>
+  <option value="San Andres I">San Andres I</option>
+  <option value="San Andres II">San Andres II</option>
+  <option value="Sta. Cristina I">Sta. Cristina I</option>
+  <option value="San Roque">San Roque</option>
+  <option value="San Francisco I">San Francisco I</option>
+  <option value="San Francisco II">San Francisco II</option>
+ </select><br><br>
+
+ <label for="residential-address">Residential Address:</label><br>
+ <input type="residential-address" id="residential-address" name="residential-address"><br><br>
+
+ <label for="zip-code">Zip code:</label><br>
+ <input type="zip-code" id="zip-code" name="zip-code"><br><br>
+
+ <label for="mobile-number">Mobile Number:</label><br>
+ <input type="mobile-number" id="mobile-number" name="mobile-number"><br><br>
+
+ <label for="email">Email Address:</label><br>
+ <input type="email" id="email" name="email"><br><br>
+
+ <label for="source of income">Source of income:</label><br>
+ <select name=slist>
+  <option value="Full-time Employee">Full-time Employee</option>
+  <option value="Part-time employee">Part-time Employee</option>
+  <option value="Freelancer">Freelancer</option>
+  <option value="Unemployed">Unemployed</option>
+  <option value="Student">Student</option>
+  <option value="Pensioner">Pensioner</option>
+ </select><br><br>
+
+ <label for="salary range">Salary Range:</label><br>
+ <select name=slist>
+  <option value="less than 10,000">Less than Php 10,000</option>
+  <option value="10,000-18,000">Php 10,000 to Php 18,000</option>
+  <option value="18,001-27,000">Php 18,001 to 27,000</option>
+  <option value="27,001-45,000">Php 27,001 to Php 45,000</option>
+  <option value="45,001-75,000">Php 45,001 to Php 75,000</option>
+  <option value="more than 75,000">more than Php 75,000</option>
+ </select><br><br>
+
+ <label for="company name">Company Name:</label><br>
+ <input type="company name" id="company name" name="company name"><br><br>
+
+ <label for="work address">Work Address:</label><br>
+ <input type="work address" id="work address" name="work address"><br><br>
+
+ <label for="number-dependents">No. of dependents:</label><br>
+ <input type="number-dependents" id="number-dependents" name="number-dependents"><br><br>
+
+ <label for="credit-card">Chosen credit card:</label>
+ <input type="radio" id="basic-card" name="credit-card" value="basic-card">
+ <label for="basic">Simply wise credit card</label>
+ <input type="radio" id="elite-card" name="credit-card" value="elite-card">
+ <label for="elite">Wise Elite credit card</label>
+ <input type="radio" id="shopmore-card" name="credit-card" value="shopmore-card">
+ <label for="shopmore">Wise Shopmore credit card</label><br><br>
+
+ <label for="other cards">Do you have other credit card/s?:</label>
+ <input type="radio" id="no-other-card" name="no-other-card" value="no-other-card">
+ <label for="no">No</label>
+ <input type="radio" id="with-other-card" name="with-other-card" value="with-other-card">
+ <label for="yes">Yes</label>
+
+ <body>
+  <h2>We value your privacy.</h2>
+  Rest assured that your application process is protected with us.
+  By clicking Next, you agree to our Privacy Policy and Terms of Agreement.<br><br>
+
+  <button type="submit">Next</button>
+
+ </body><br><br>
+
+</html>
